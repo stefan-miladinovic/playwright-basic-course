@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "dotenv": "^17.4.0",
+    "playwright": "^1.59.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.0",
+    "@types/node": "^25.5.0",
+    "cross-env": "^10.1.0"
+  },
+  "scripts": {
+    "test:local": "cross-env ENVIRONMENT=local npx playwright test --project=local",
+    "test:local_ui": "cross-env ENVIRONMENT=local npx playwright test --ui --project=local",
+    "test:remote": "cross-env ENVIRONMENT=remote npx playwright test --project=remote"
+  }
+}
