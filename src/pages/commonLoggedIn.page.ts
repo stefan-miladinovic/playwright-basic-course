@@ -41,4 +41,8 @@ export class CommonLoggedInPage {
     async userIsLoggedIn() {
         expect(this.profileButton).toBeVisible();
     }
+
+    async getUsersTabText() {
+        return await this.usersTab.textContent();
+    }
 }
